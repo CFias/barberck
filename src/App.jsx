@@ -1,11 +1,14 @@
 import { useState } from "react";
 import "./App.css";
-import { HelloWorld } from "./components/HelloWorld";
+import { Navbar } from "./components/Navbar";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
   return (
     <>
-      <HelloWorld />
+      <BrowserRouter>
+        <Navbar />
+      </BrowserRouter>
     </>
   );
 }
